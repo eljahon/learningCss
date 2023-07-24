@@ -1,0 +1,52 @@
+.food_type {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15p;
+}
+.food_box {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.food_img {
+  height: 171px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+}
+.food_info {
+  padding: 15px;
+}
+.food_title {
+  font-size: 18px;
+}
+.food_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.food_price {
+  font-size: 18px;
+  font-weight: 700;
+}
+.food_count {
+  display: flex;
+  align-items: center;
+}
+.food_count button {
+  width: 26px;
+  height: 26px;
+  background-color: #157AFE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.food_count_value {
+  text-align: center;
+  width: 37px;
+  padding: 0px 5px;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}

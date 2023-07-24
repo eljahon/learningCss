@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/medis.css">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="header__menu">
+      <li>
+        <a href="" class="header__menu--link active">
+          <img src="./img/home.png" alt="">
+          Главная
+        </a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link">
+          <img src="./img/food.png" alt="">
+          Заказать еда
+        </a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link">
+          <img src="./img/moves.png" alt="">
+          Фильмы
+        </a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link">
+          <img src="./img/video.png" alt="">
+          Клипы
+        </a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link"><img src="./img/music.png" alt="">
+          Музыка</a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link"><img src="./img/news.png" alt="">
+          Новости</a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link"> <img src="./img/consert.png" alt="">
+          Концерты</a>
+
+      </li>
+      <li>
+        <a href="" class="header__menu--link"><img src="./img/sports.png" alt="">
+          Спорт</a>
+
+      </li>
+    </ul>
+    <ul class="header__btns">
+      <li>
+        <button><img src="./img/search.png" alt=""></button>
+      </li>
+      <li>
+        <button class="flag"><img src="./img/ru.jpg" alt=""></button>
+      </li>
+      <li>
+        <button><img src="./img/notification.png" alt=""></button>
+      </li>
+      <li>
+        <button><img src="./img/user.png" alt=""></button>
+      </li>
+    </ul>
+    <button onclick="toggle()" class="header_toggle">
+      <span></span>
+    </button>
+  </header>
+  <section class="main">
+    <div class="container">
+      <h1>Заказать еду</h1> <br>
+      <div class="row">
+          <div class="col-9 col-xs-12">
+                    <div class="food_type">
+                              Пироги
+                    </div>
+                    <div class="row">
+                              <div class="col-4 col-xs-6">
+<div class="food_box">
+          <div class="food_img" style="background-image: url('./img/food_img.png');"></div>
+          <div class="food_info">
+                    <div class="food_title">
+                              Пирог 100г
+                    </div>
+                    <div class="food_bottom">
+                              <div class="food_price">
+                                        22 000 сум
+                              </div>
+                              <div class="food_count">
+                                        <button><img src="./img/left.png" alt=""></button>
+                                        <div class="food_count_value">
+                                                  2
+                                        </div>
+                                        <button><img src="./img/right.png" alt=""></button>
+                              </div>
+                    </div>
+          </div>
+</div>
+                              </div>
+                    </div>
+          </div>
+          <div class="col- 3 col-xs-12">
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__text">
+        Видеозаписи предназначены исключительно для предварительного ознакомительного просмотра (прослушивания). <br>
+        Все права на исходные видеоматериалы принадлежат соответствующим организациям
+      </div>
+      <a href="#" class="footer_auth" target="_blank">
+        <img src="./img/aitm.png" alt="">
+        Developed by aitm.uz
+      </a>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
