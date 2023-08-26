@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css">
+          <title>Document</title>
+</head>
+<body>
+          <h1>dsf</h1>
+          <div id="xspreadsheet"></div>
+          <div class="classname"></div>
+          <script src="https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js"></script>
+          <script>
+                      const initialData = [
+      ['A1', 'B1', 'C1'],
+      ['A2', 'B2', 'C2'],
+      // ...
+    ];
+                    const spreadsheet = new x_spreadsheet('#xspreadsheet', {
+                              mode: 'edit', // edit | read
+  showToolbar: true,
+  showGrid: true,
+  showContextmenu: true,
+                      view: {
+                        height: () => document.documentElement.clientHeight - 50,
+                        width: () => document.documentElement.clientWidth - 10,
+                      },
+                      col: {
+    len: 26,
+    width: 100,
+    indexWidth: 60,
+    minWidth: 60,
+  },
+                    });
+                    spreadsheet.on('cell-selected', (cell, ri, ci) => {
+                              console.log(ri, ci, "cell-selected");
+                    });
+                    spreadsheet.on('cells-selected', (cell, { sri, sci, eri, eci }) => {
+                              console.log(cell,sri, sci, eri, eci, "cells-selected");
+                              if (eci === 2) {
+        spreadsheet.update({ [`${eri}-${eci}`]: { ...spreadsheet.getDataAtCell(eri, eci), readOnly: true } });
+      }
+
+                    });
+                    spreadsheet.on('cell-edited', (text, ri, ci) => {
+                              console.log(text, ri, ci, "cell-edited");
+
+                    });
+                    spreadsheet.loadData(initialData)
+                    .change
+                  </script>
+</body>
+</html>
